@@ -1,7 +1,7 @@
 #include "mbed.h"
 #include "TextLCD.h"
 
-TextLCD lcd(PD_2,PD_3,PD_4,PD_5,PD_6,PD_7);
+TextLCD lcd(PC_11,PC_12,PD_4,PD_5,PD_6,PD_7);
 
 DigitalIn button1(PE_3,PullUp);
 DigitalIn button0(PE_4,PullUp);
@@ -74,7 +74,7 @@ int main(){
             lcd.printf(fourth_item);
         }
 
-        wait(0.3);
+        wait(0.1);
         }
     
     }
